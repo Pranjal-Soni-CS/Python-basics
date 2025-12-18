@@ -1,8 +1,8 @@
 # Basic variables example
 
-name = "Pranjal"
-age = 18
-is_student = True
+name = "Pranjal"     #string
+age = 18             #integer
+is_student = True    #boolean
 
 print(name)
 print(age)
