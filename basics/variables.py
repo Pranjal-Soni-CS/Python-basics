@@ -1,4 +1,4 @@
-# Basic variables example
+#Program_1-Basic variables example
 
 name = "Pranjal"     #string
 age = 18             #integer
