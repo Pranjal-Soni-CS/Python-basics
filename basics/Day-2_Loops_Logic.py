@@ -15,40 +15,29 @@ for i in range(1, n+1):
     if i % 2 == 0:
         print(i)
 
-#==============================
-#Program 3: Prime Number Checker
+# ==============================
+# Program: Prime Number Checker
 
 
-num=int (input("Enter the Number:"))
-n=str(num)
+try:
+    num = int(input("Enter the number: "))
+except ValueError:
+    print("Invalid input. Please enter an integer.")
+    raise SystemExit
 
-n=str(num)
-if num<0:
+if num < 2:
     print(f"{num} is not a prime number")
-    raise SystemExit('program ended')
-
-elif not n.isdigit():
-      raise SystemExit("not a number")
-     
-     
-
-num=int(num)     
-
-
-if num > 1:
-    is_prime = True 
-    for i in range(2, int(num**0.5) + 1):
-            if num % i == 0:
-                is_prime = False
-                break
-            
-    if is_prime:
-            print(f"{num} is a prime number")
-    else:
-            print(f"{num} is not a prime number")
 else:
-        print(f"{num} is not a prime number")
+    is_prime = True
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
 
+    if is_prime:
+        print(f"{num} is a prime number")
+    else:
+        print(f"{num} is not a prime number")
 
 
 # ==============================
