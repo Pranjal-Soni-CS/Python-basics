@@ -19,10 +19,16 @@ for i in range(1, n+1):
 #Program 3: Prime Number Checker
 
 
-num=input("Enter the Number:")
+num=int (input("Enter the Number:"))
+n=str(num)
 
-if not num.isdigit():
-     raise SystemExit("not a number")
+n=str(num)
+if num<0:
+    print(f"{num} is not a prime number")
+    raise SystemExit('program ended')
+
+elif not n.isdigit():
+      raise SystemExit("not a number")
      
      
 
